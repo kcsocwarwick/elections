@@ -71,8 +71,8 @@
             if (formElements) {
               formElements.style.display = "none"; // hide form
             }
-            var thankYouMessage = form.querySelector(".thankyou_message");
-            if (thankYouMessage) {
+            var thankYouMessage = document.getElementById("thankyou_message");
+            if (thankYouMessage.style.display=="none") {
               thankYouMessage.style.display = "block";
             }
           }
