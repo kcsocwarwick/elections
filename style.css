@@ -1,0 +1,143 @@
+html {
+    font-size: 17px;
+    font-family: 'Kanit', sans-serif;
+    scroll-behavior: smooth;
+}
+@media screen and (min-width: 919px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+body{
+    /* background-color: rgb(85, 0, 0); */
+    background-color: rgb(163,70,112);
+    color: white;
+}
+hr {
+    border-top: 5px solid rgba(0,0,0,.1);;
+}
+.smart-scroll{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.scrolled-down{
+    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+    transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+.navbar-custom { 
+    /* background-color:rgb(102,0,0); */
+    background-color: rgb(131, 57, 90);
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+.navbar-toggler-icon {
+    background-image: none;
+}
+.navbar-toggler-icon::before {
+    font-family: FontAwesome;
+    content: "\f0c9"; /* fa-bars, fa-navicon */
+    font-size: 30px;
+    color: white;
+}
+.nav-link {
+    color: rgb(207, 225, 228) !important; 
+}
+.nav-link:hover {
+    color: white !important;
+}
+.nav-item:hover {
+    /* background-color: rgb(85,0,0); */
+    background-color: rgb(163,70,112);
+}
+.dropdown-menu {
+    /* background-color: rgb(102,0,0); */
+    background-color: rgb(163,70,112);
+    padding: 0 0 0;
+    border: 50 black;
+}
+.dropdown-menu a {
+    color: white;
+}
+
+h1 {
+    font-size: 5.5rem;
+    padding: 25px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+@media screen and (max-width: 440px) {
+    html {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+}
+@media screen and (max-width: 374px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.graphic-div {
+    display: flex;
+    flex: 1 1 250px; /*  Stretching: */
+    flex: 0 1 250px; /*  No stretching: */
+    margin: 20px;
+    flex-direction: column; /* make main-axis vertical */
+    justify-content: center; /* align items vertically, in this case */
+}
+.graphic {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    flex: 1 1 700px; /*  Stretching: */
+    flex: 0 1 700px; /*  No stretching: */
+    margin: 5px;
+}
+
+.form-control {
+    display: inline-block;
+    margin: 5px;
+}
+.custom-select {
+    margin: 5px;
+}
+.honeypot-field {
+    display: none;
+}
+
+footer {
+    /* background-color: rgb(102,0,0); */
+    background-color: rgb(131, 57, 90);
+    padding-top: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+    vertical-align:bottom;
+    }
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: wheat;
+}
