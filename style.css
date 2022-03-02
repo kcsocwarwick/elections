@@ -11,7 +11,7 @@ html {
 
 body{
     /* background-color: rgb(85, 0, 0); */
-    background-color: rgb(163,70,112);
+    background-color: rgb(70, 141, 163);
     color: white;
 }
 hr {
@@ -32,7 +32,7 @@ hr {
 }
 .navbar-custom { 
     /* background-color:rgb(102,0,0); */
-    background-color: rgb(131, 57, 90);
+    background-color: rgb(57, 114, 131);
     font-size: 20px;
     font-family: 'Kanit', sans-serif;
 }
@@ -53,11 +53,11 @@ hr {
 }
 .nav-item:hover {
     /* background-color: rgb(85,0,0); */
-    background-color: rgb(163,70,112);
+    background-color: rgb(70, 113, 163);
 }
 .dropdown-menu {
     /* background-color: rgb(102,0,0); */
-    background-color: rgb(163,70,112);
+    background-color: rgb(70, 126, 163);
     padding: 0 0 0;
     border: 50 black;
 }
@@ -127,7 +127,7 @@ h1 {
 
 footer {
     /* background-color: rgb(102,0,0); */
-    background-color: rgb(131, 57, 90);
+    background-color: rgb(57, 110, 131);
     padding-top: 20px;
     padding-bottom: 5px;
     text-align: center;
