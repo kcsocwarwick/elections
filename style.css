@@ -141,3 +141,7 @@ footer a {
 footer a:hover {
     color: wheat;
 }
+
+a {
+    color: rgb(41, 6, 105);
+}
