@@ -32,7 +32,7 @@ hr {
 }
 .navbar-custom { 
     /* background-color:rgb(102,0,0); */
-    background-color: rgb(57, 114, 131);
+    background-color: rgb(18, 103, 129);
     font-size: 20px;
     font-family: 'Kanit', sans-serif;
 }
@@ -53,7 +53,7 @@ hr {
 }
 .nav-item:hover {
     /* background-color: rgb(85,0,0); */
-    background-color: rgb(70, 113, 163);
+    background-color: rgb(6, 32, 105);
 }
 .dropdown-menu {
     /* background-color: rgb(102,0,0); */
@@ -143,5 +143,5 @@ footer a:hover {
 }
 
 a {
-    color: rgb(41, 6, 105);
+    color: rgb(6, 32, 105);
 }
