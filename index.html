@@ -110,9 +110,14 @@
     </nav-->
 
     <main class="coral section">
+      <img
+        style="display: block; margin-left: auto; margin-right: auto"
+        src="img/l.png"
+        width="350"
+        alt=""
+        class=""
+      />
       <div class="container" id="home">
-        <img src="img/l.png" width="300" alt="" class="" />
-        <br />
         <h1>Warwick<br />Elections 2022</h1>
       </div>
       <hr id="about" />
@@ -483,12 +488,7 @@
         </div>
       </div>
       <div class="container">
-        <form
-          class="gform-apply"
-          name="apply-form"
-          method="POST"
-          action="https://script.google.com/macros/s/AKfycbwKoDE6BIWVUFcrTs2HAIFBZKoFN3fANrklFFpDjayqkHz7uXF5/exec"
-        >
+        <form name="apply-form" method="POST" data-netlify="true">
           <!-- change the form action to your script url -->
 
           <div class="form-elements">
@@ -611,11 +611,7 @@
         </div>
       </div>
       <div class="container">
-        <form
-          class="gform-contact"
-          method="POST"
-          action="https://script.google.com/macros/s/AKfycbzsb-kqlgytjVjUwDgrvqACBPbxEM_eWsSjipG9gCpFbwqqRvE/exec"
-        >
+        <form method="POST" data-netlify="true">
           <div class="form-elements">
             <fieldset class="form-group">
               <input
@@ -693,9 +689,9 @@
       </p>
     </footer>
 
-    <script data-cfasync="false" src="contact-form.js"></script>
-    <script data-cfasync="false" src="apply-form.js"></script>
-    <script>
+    <!--script data-cfasync="false" src="contact-form.js"></script-->
+    <!--script data-cfasync="false" src="apply-form.js"></script-->
+    <!--script>
       // add padding top to show content behind navbar
       $("body").css("padding-top", $(".navbar").outerHeight() + "px");
 
@@ -735,6 +731,6 @@
           }
         }
       }
-    </script>
+    </script-->
   </body>
 </html>
