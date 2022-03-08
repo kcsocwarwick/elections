@@ -111,7 +111,12 @@
 
     <main class="coral section">
       <img
-        style="display: block; margin-left: auto; margin-right: auto; padding-top: 2em;"
+        style="
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          padding-top: 2em;
+        "
         src="img/l.png"
         width="350"
         alt=""
@@ -536,13 +541,13 @@
                 class="custom-select"
                 id="pos1"
                 name="position1"
-                onchange="getDropDown(this)"
+                onchange="getDropDown()"
                 required
               >
                 <option value="" disabled selected>Position 1</option>
                 <option value="President">Presidential Penguin</option>
                 <option value="Vice-President">Vice-Presidential Puffin</option>
-                <option value="Secretary">Secretial Owl</option>
+                <option value="Secretary">Secretarial Owl</option>
                 <option value="Treasurer">Counting Squirrel (Treasurer)</option>
                 <option value="Welcome Butterfly">Welcome Butterfly</option>
                 <option value="Social Media">Social Media Wizard</option>
@@ -559,7 +564,7 @@
                 </option>
                 <option value="President">Presidential Penguin</option>
                 <option value="Vice-President">Vice-Presidential Puffin</option>
-                <option value="Secretary">Secretial Owl</option>
+                <option value="Secretary">Secretarial Owl</option>
                 <option value="Treasurer">Counting Squirrel (Treasurer)</option>
                 <option value="Welcome Butterfly">Welcome Butterfly</option>
                 <option value="Social Media">Social Media Wizard</option>
@@ -711,8 +716,9 @@
           last_scroll_top = scroll_top;
         });
       }
-
-      function getDropDown(dropdown) {
+    </script-->
+    <script>
+      /*function getDropDown(dropdown) { // param should be "this"
         var pos = document.getElementById("pos2");
 
         for (let i = 2; i < 10; i++) {
@@ -728,7 +734,15 @@
             pos.options[0].selected = "true";
           }
         }
+      }*/
+
+      function getDropDown() {
+        $("#pos2 option").each(function () {
+          if ($("#pos1 option:selected").val() == $(this).val())
+            $(this).attr("disabled", "disabled");
+          else $(this).removeAttr("disabled");
+        });
       }
-    </script-->
+    </script>
   </body>
 </html>
